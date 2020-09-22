@@ -28,7 +28,9 @@ public class TestMainClass {
 		Integer expectedResult[] = { 1, 32, 54, 67, 78, 99 };
 		List<Integer> expectedResultList = Arrays.asList(expectedResult);
 		int[] arr = { 99, 54, 67, 32, 1, 78 };
-		int result[] = HeapSort.heapSort(arr);
+		// 99 54 67 32 1 78
+		Array array = new Array(arr);
+		int result[] = HeapSort.heapSort(array);
 		List<Integer> resultList = new ArrayList<Integer>(result.length);
 		for (int i : result) {
 			resultList.add(i);
