@@ -12,7 +12,8 @@ public class MainClass {
 		System.out.println("Enter " + n + " integer elements");
 		for (int i = 0; i < n; i++)
 			arr[i] = in.nextInt();
-		int result[] = HeapSort.heapSort(arr);
+		Array array = new Array(arr);
+		int result[] = HeapSort.heapSort(array);
 		System.out.println("After sorting ");
 		for (int i = 0; i < n; i++)
 			System.out.println(result[i] + " ");
