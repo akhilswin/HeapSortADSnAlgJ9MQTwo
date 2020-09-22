@@ -3,7 +3,8 @@ package yaksha;
 public class HeapSort {
 	private static int N;
 
-	public static int[] heapSort(int arr[]) {
+	public static int[] heapSort(Array array) {
+		int arr[] = array.getArr();
 		heapMethod(arr);
 		for (int i = N; i > 0; i--) {
 			swap(arr, 0, i);
